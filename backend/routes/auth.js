@@ -34,4 +34,5 @@ router
   .put(isAuthenticatedUser, authorizeRoles("admin"), updateUser)
   .delete(isAuthenticatedUser, authorizeRoles("admin"), deleteUser);
 
+
 export default router;

@@ -23,10 +23,11 @@ app.use(cookieParser())
 // Import all routes
 
 import authRoutes from "./routes/auth.js";
-
+import pizzaRoutes from "./routes/pizza.js";
 
 
 app.use("/api/v1", authRoutes);
+app.use("/api/v1", pizzaRoutes);
 
 
 app.use(errorHandeler);
