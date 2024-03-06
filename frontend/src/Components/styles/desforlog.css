@@ -1,0 +1,128 @@
+:root {
+  --primary: red;
+  --imp: #fffce8;
+  --secondary: black;
+}
+* {
+  box-sizing: border-box;
+}
+ .x{
+  height: 63vh;
+  width: 57.78vb;
+  border: 3px solid var(--secondary);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 11%;
+ }
+a{
+    text-decoration: none;
+    font-size: 1rem;
+    color:var(--secondary);
+    font-style: oblique;
+    font-weight: 500;
+}
+.body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  background-color: var(--secondary);
+  background: radial-gradient(circle, var(--primary), var(--secondary));
+}
+
+.container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 55vb;
+  height: 60vh;
+  background-color: var(--primary);
+  border-radius: 10%;
+  border: 4px solid var(--secondary);
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2 {
+  font-weight: 900;
+  color: var(--secondary);
+}
+
+.e-mial,
+.password, 
+.name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3em;
+}
+
+input:focus{
+    outline: none;
+}
+::placeholder{
+    color: var(--secondary);
+}
+input[type="email"],
+input[type="password"],
+input[type="name"] {
+  width: 89%;
+  height: 5vh;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid var(--secondary);
+  font-size: 100%;
+  padding: 4%;
+  vertical-align: auto;
+  background: transparent;
+  color: var(--secondary);
+}
+
+.forgot-password {
+  margin: 4.5em;
+}
+
+form {
+  height: 100%;
+  width: 100%;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2em;
+  margin-top: 3em;
+}
+button {
+  height: 2em;
+  width: 50%;
+  font-size: 1.3rem;
+  background-color: var(--imp);
+  border-radius: 8px;
+  font-weight: 550;
+}
+button:hover{
+    
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+}
+.forgot-password:hover{
+    text-decoration: underline;
+}
+.dont-have-account:hover{
+    text-decoration: underline;
+}
+hr{
+  /* border-color: var(--secondary); */
+  border: 2.5px solid var(--secondary);
+  /* background-color: var(--secondary); */
+}

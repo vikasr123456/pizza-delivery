@@ -1,0 +1,8 @@
+.uop{
+  width: 20%;
+  height: 20%;
+  border: 2px solid brown;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
