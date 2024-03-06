@@ -1,4 +1,5 @@
 import catchAsycError from "../middleware/catchAsycError.js";
+import custompizzamodel from "../models/custompizzamodel.js";
 import pizza from "../models/pizza.js";
 
 export const getProducts = async (req, res) => {
@@ -66,3 +67,21 @@ export const deletePizza = catchAsycError(async (req, res) => {
   });
 }
 );
+
+export  const createCustomPizza = catchAsycError(async (req, res) => {
+  const { name, baseSize , sauceType, cheeseType,toppings } = req.body;
+  const newPizza = await custompizzamodel.create({
+    name,
+    baseSize,
+    sauceType,
+    cheeseType,
+    toppings,
+  });
+  res.status(201).json({
+    success: true,
+    newPizza,
+  });
+}
+);
+
+

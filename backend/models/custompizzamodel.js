@@ -6,9 +6,7 @@ const customPizzaSchema = new Schema(
       required: true,
     },
     price: {
-      type: Number,
-      required: true,
-    },
+      type: Number,    },
     baseSize: {
       type: String,
       required: true,
@@ -27,3 +25,6 @@ const customPizzaSchema = new Schema(
   },
   { timestamps: true }
 );
+
+
+export default model("CustomPizza", customPizzaSchema);
